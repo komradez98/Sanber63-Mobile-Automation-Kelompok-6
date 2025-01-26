@@ -5,11 +5,12 @@
 3. Fajri Annisa (Annisafaj)
 4. Naqiya Mutmainnah (naqiyamutmainnah)
 5. Reindo Aris Saputra (ReindoAris)
-6. Tama Suci Rahmadani (tamasucirahmadani) 
+6. Tama Suci Rahmadani (tamasucirahmadani)
+7. Moh Rizqi Hilman Riyadi (rizqihilman)
 
 -Pembagian tugas
 1. Dede Wahyu 
-2. Oca Yordan Krisnanda 
+2. Oca Yordan Krisnanda (Book Flight)      
 3. Fajri Annisa 
 4. Naqiya Mutmainnah 
 5. Reindo Aris Saputra 
