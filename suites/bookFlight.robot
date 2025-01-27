@@ -3,6 +3,7 @@ Library    AppiumLibrary
 Resource    ../PageObjects/base.robot
 Resource    ../PageObjects/HomePage/homePage.robot
 Resource    ../PageObjects/BookPage/bookPage.robot
+Resource    ../PageObjects/loginPage/loginPage.robot
 
 *** Variables ***
 ${REMOTE_URL}                                 http://localhost:4723/wd/hub                                 
@@ -18,9 +19,10 @@ ${APP_ACTIVITY}                               com.example.myapplication.MainActi
 *** Test Cases ***
 User Can Login to Application
     Open Flight Application
-    Click Login Icon
+    Click Butoon Login
     Input Username
     Input Password
+    
     Click Sign Button
 User can book one way flight
     Click Book Icon
