@@ -2,7 +2,9 @@
 Documentation     Login Page Keyword Related
 Resource         ../base.robot
 Resource         ../homePage/homePage.robot
+Resource    ../../pageObjectsAPK/homePage/homePage.robot
 Variables        login_page.yaml
+Library    AppiumLibrary
 
 *** Variables ***
 ${VALID_EMAIL}               support@ngendigital.com

@@ -4,6 +4,7 @@ Resource         ../base.robot
 Resource         ../homePage/homePage.robot            
 Variables        check_Book_flight.yaml
 
+Library    AppiumLibrary
 
 *** Variables ***
 ${FLIGHT_NUMMBER}    DA935

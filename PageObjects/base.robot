@@ -3,7 +3,7 @@ Documentation            Base page keywords related
 
 *** Keywords ***
 Open Flight Application
-    Open Application            remote_url=${REMOTE_URL}
+    Open Flight Application     remote_url=${REMOTE_URL}
     ...                         platformName=${PLATFORM_NAME}
     ...                         platformVersion=${PLATFORM_VERSION}
     ...                         deviceName=${DEVICE_NAME}
@@ -11,4 +11,4 @@ Open Flight Application
     ...                         appActivity=${APP_ACTIVITY}
 
 Close Flight Application
-    Close Application
+    Close Flight Application

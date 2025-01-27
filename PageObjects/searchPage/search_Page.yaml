@@ -1,0 +1,21 @@
+# Appium Configuration for Search Feature Testing
+
+appium:
+  server:
+    address: http://localhost
+    port: 4723
+  capabilities:
+    platformName: Android
+    platformVersion: 7.0
+    deviceName: emulator-5554
+    app: com.example.myapplication
+    automationName: UiAutomator2
+
+# Search Test Configuration
+tests:
+  search:
+    search_field_id: //android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]
+    search_button_id: //android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]
+    result_class_name: android.widget.TextView  # Replace with actual class name for search results
+    search_query: Dummy Data  # Query to test search functionality
+    expected_result: Expected Dummy Result  # Expected result to validate
