@@ -1,0 +1,5 @@
+click_button_search: '//android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]'
+verivy_menu_Search_flight: '//android.widget.TextView[@resource-id="com.example.myapplication:id/enterFlight"]'
+input_flight_number: '//android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]'
+click_butoon_search_flight: '//android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]'
+verify_Flight_number_search_input: '//android.widget.TextView[@text="DA 935"]'

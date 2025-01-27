@@ -15,3 +15,6 @@
 4. Naqiya Mutmainnah 
 5. Reindo Aris Saputra 
 6. Tama Suci Rahmadani 
+
+Link Record
+1.  Dede Wahyu Link: https://drive.google.com/file/d/1YVAxYaZCKPUpE7z1w3jyi3aWPsUqeTb5/view?usp=sharing

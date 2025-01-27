@@ -1,0 +1,5 @@
+username_column: '//android.widget.EditText[@resource-id="com.example.myapplication:id/username"]'
+password_column: '//android.widget.EditText[@resource-id="com.example.myapplication:id/password"]'
+button_signin: '//android.widget.Button[@resource-id="com.example.myapplication:id/signIn"]'
+login_element_success: '//android.widget.TextView[@resource-id="com.example.myapplication:id/textView"]'
+login_menu_invalid_user: '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.view.ViewGroup'

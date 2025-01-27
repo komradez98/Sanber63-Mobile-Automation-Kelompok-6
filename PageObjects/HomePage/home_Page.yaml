@@ -1,0 +1,2 @@
+verfy_home_page: '//android.widget.ImageView[@resource-id="com.example.myapplication:id/imageView4"]'
+buttton_signin: '//android.widget.Button[@resource-id="com.example.myapplication:id/login"]'
