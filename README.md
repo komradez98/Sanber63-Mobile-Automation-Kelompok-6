@@ -9,7 +9,7 @@
 7. Moh Rizqi Hilman Riyadi (rizqihilman)
 
 -Pembagian tugas
-1. Dede Wahyu 
+1. Dede Wahyu (All Moduls)
 2. Oca Yordan Krisnanda (Book Flight)      
 3. Fajri Annisa 
 4. Naqiya Mutmainnah 
