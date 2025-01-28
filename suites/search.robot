@@ -9,6 +9,7 @@ Resource    ../PageObjects/searchPage/searchPage.robot
 
 *** Test Cases ***
 
+<<<<<<< HEAD
 Buka Aplikasi Flight
     Open Application    remote_url=http://127.0.0.1:4723/wd/hub 
     ...    platformName=Android
@@ -17,3 +18,14 @@ Buka Aplikasi Flight
     ...    appPackage=com.example.myapplication
     ...    appActivity=com.example.myapplication.MainActivity
 
+=======
+Search Flight
+    Buka Aplikasi Flight
+    Click Sign In Button
+    Masukkan Username
+    Masukkan Password
+    Click Sign In Button On Login Screen
+    Click Search
+    Masukkan Number Flight
+    Click Search On Search Screen
+>>>>>>> e761b18f30b126b1729bb9c6bc6203be04d1d850
