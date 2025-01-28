@@ -4,7 +4,7 @@ Variables                search_Page.yaml
 Library    AppiumLibrary
 
 *** Keywords ***
-Open Flight Application
+Buka Aplikasi Mobile Flight
     Open Application    remote_url=http://127.0.0.1:4723/wd/hub 
     ...    platformName=Android
     ...    platformVersion=7.0
