@@ -1,63 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-01-28T11:17:45.049652" rpa="false" schemaversion="5">
-<suite id="s1" name="Sanber63-Mobile-Automation-Kelompok-6" source="C:\Users\DELL\Desktop\Sanber63-Mobile-Automation-Kelompok-6">
-<suite id="s1-s1" name="Suites" source="C:\Users\DELL\Desktop\Sanber63-Mobile-Automation-Kelompok-6\suites">
-<suite id="s1-s1-s1" name="Search" source="C:\Users\DELL\Desktop\Sanber63-Mobile-Automation-Kelompok-6\suites\search.robot">
-<test id="s1-s1-s1-t1" name="Search Flight" line="12">
-<kw name="Open Flight Aplication">
-<msg time="2025-01-28T11:17:46.212274" level="FAIL">No keyword with name 'Open Flight Aplication' found. Did you mean:
-    base.Open Flight Application
-    base.Close Flight Application</msg>
-<status status="FAIL" start="2025-01-28T11:17:46.202470" elapsed="0.012492">No keyword with name 'Open Flight Aplication' found. Did you mean:
-    base.Open Flight Application
-    base.Close Flight Application</status>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-01-28T15:19:55.158352" rpa="false" schemaversion="5">
+<suite id="s1" name="Sanber63-Mobile-Automation-Kelompok-6" source="C:\Users\user\Desktop\Sanber63-Mobile-Automation-Kelompok-6">
+<suite id="s1-s1" name="Suites" source="C:\Users\user\Desktop\Sanber63-Mobile-Automation-Kelompok-6\suites">
+<suite id="s1-s1-s1" name="Search1" source="C:\Users\user\Desktop\Sanber63-Mobile-Automation-Kelompok-6\suites\search1.robot">
+<test id="s1-s1-s1-t1" name="Search Flight" line="21">
+<kw name="Buka Aplikasi Mobile Flight" owner="SearchPage1">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>remote_url=http://127.0.0.1:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=7.0</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>appPackage=com.example.myapplication</arg>
+<arg>appActivity=com.example.myapplication.MainActivity</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-01-28T15:19:55.617370" elapsed="20.503081"/>
 </kw>
-<kw name="Click Sign In Button">
-<status status="NOT RUN" start="2025-01-28T11:17:46.316591" elapsed="0.008323"/>
+<status status="PASS" start="2025-01-28T15:19:55.616091" elapsed="20.506837"/>
 </kw>
-<kw name="Input Username">
-<status status="NOT RUN" start="2025-01-28T11:17:46.400871" elapsed="0.008277"/>
+<kw name="Click Sign In Button" owner="SearchPage1">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-28T15:20:16.857405" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/login"]</msg>
+<arg>locator=//android.widget.Button[@resource-id="com.example.myapplication:id/login"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-28T15:20:16.134111" elapsed="0.724497"/>
 </kw>
-<kw name="Input Password" owner="AppiumLibrary">
-<doc>Types the given password into text field identified by `locator`.</doc>
-<status status="NOT RUN" start="2025-01-28T11:17:46.471122" elapsed="0.001426"/>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-01-28T15:20:16.864696" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.example.myapplication:id/login"]'.</msg>
+<msg time="2025-01-28T15:20:17.358196" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/login"]</msg>
+<arg>locator=//android.widget.Button[@resource-id="com.example.myapplication:id/login"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-01-28T15:20:16.859229" elapsed="0.499760"/>
 </kw>
-<kw name="Click Sign In Button On Login Screen">
-<status status="NOT RUN" start="2025-01-28T11:17:46.485205" elapsed="0.007221"/>
+<status status="PASS" start="2025-01-28T15:20:16.132967" elapsed="1.226917"/>
 </kw>
-<kw name="Click Search">
-<status status="NOT RUN" start="2025-01-28T11:17:46.505419" elapsed="0.009472"/>
+<kw name="Ketikkan Username" owner="SearchPage1">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-28T15:20:21.381198" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.example.myapplication:id/username"]
+xpath criteria: //android.widget.EditText[@resource-id="com.example.myapplication:id/username"]
+xpath criteria: //android.widget.EditText[@resource-id="com.example.myapplication:id/username"]</msg>
+<arg>locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/username"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-28T15:20:17.428621" elapsed="3.953432"/>
 </kw>
-<kw name="Masukkan Number Flight">
-<status status="NOT RUN" start="2025-01-28T11:17:46.522593" elapsed="0.019908"/>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-01-28T15:20:21.392779" level="INFO">Typing text 'support@ngendigital.com' into text field '//android.widget.EditText[@resource-id="com.example.myapplication:id/username"]'</msg>
+<msg time="2025-01-28T15:20:21.734477" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.example.myapplication:id/username"]</msg>
+<arg>locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/username"]</arg>
+<arg>text=support@ngendigital.com</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-01-28T15:20:21.383725" elapsed="0.351113"/>
 </kw>
-<kw name="Click Search On Search Screen">
-<status status="NOT RUN" start="2025-01-28T11:17:46.559545" elapsed="0.010571"/>
+<status status="PASS" start="2025-01-28T15:20:17.419485" elapsed="4.315674"/>
 </kw>
-<status status="FAIL" start="2025-01-28T11:17:46.189880" elapsed="0.397484">No keyword with name 'Open Flight Aplication' found. Did you mean:
-    base.Open Flight Application
-    base.Close Flight Application</status>
+<kw name="Ketikkan Password" owner="SearchPage1">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-28T15:20:22.324331" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.example.myapplication:id/password"]</msg>
+<arg>locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/password"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-28T15:20:21.757016" elapsed="0.567847"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-01-28T15:20:22.330463" level="INFO">Typing text 'abc123' into text field '//android.widget.EditText[@resource-id="com.example.myapplication:id/password"]'</msg>
+<msg time="2025-01-28T15:20:22.455446" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.example.myapplication:id/password"]</msg>
+<arg>locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/password"]</arg>
+<arg>text=abc123</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-01-28T15:20:22.325279" elapsed="0.130616"/>
+</kw>
+<status status="PASS" start="2025-01-28T15:20:21.753024" elapsed="0.703212"/>
+</kw>
+<kw name="Click Sign In Button On Login Screen" owner="SearchPage1">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-01-28T15:20:22.469678" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.example.myapplication:id/signIn"]'.</msg>
+<msg time="2025-01-28T15:20:23.041151" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/signIn"]</msg>
+<arg>locator=//android.widget.Button[@resource-id="com.example.myapplication:id/signIn"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-01-28T15:20:22.462915" elapsed="0.578666"/>
+</kw>
+<status status="PASS" start="2025-01-28T15:20:22.461195" elapsed="0.580714"/>
+</kw>
+<kw name="Click Search" owner="SearchPage1">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-28T15:20:25.391583" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]
+xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]</msg>
+<arg>locator=//android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-28T15:20:23.062690" elapsed="2.329903"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-01-28T15:20:25.399011" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]'.</msg>
+<msg time="2025-01-28T15:20:25.496200" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]</msg>
+<arg>locator=//android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-01-28T15:20:25.393320" elapsed="0.103412"/>
+</kw>
+<status status="PASS" start="2025-01-28T15:20:23.061768" elapsed="2.435273"/>
+</kw>
+<kw name="Ketikkan Flight Number" owner="SearchPage1">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-28T15:20:31.883254" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]
+xpath criteria: //android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]
+xpath criteria: //android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]</msg>
+<arg>locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-28T15:20:25.511049" elapsed="6.373599"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-01-28T15:20:31.894699" level="INFO">Typing text 'DA935' into text field '//android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]'</msg>
+<msg time="2025-01-28T15:20:32.031118" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]</msg>
+<arg>locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]</arg>
+<arg>text=DA935</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-01-28T15:20:31.889624" elapsed="0.142247"/>
+</kw>
+<status status="PASS" start="2025-01-28T15:20:25.509971" elapsed="6.522239"/>
+</kw>
+<kw name="Click Search On Search Screen" owner="SearchPage1">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-28T15:20:32.770260" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]</msg>
+<arg>locator=//android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-28T15:20:32.045852" elapsed="0.726664"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-01-28T15:20:32.777626" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]'.</msg>
+<msg time="2025-01-28T15:20:32.876490" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]</msg>
+<arg>locator=//android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-01-28T15:20:32.773003" elapsed="0.104591"/>
+</kw>
+<status status="PASS" start="2025-01-28T15:20:32.044838" elapsed="0.833520"/>
+</kw>
+<status status="PASS" start="2025-01-28T15:19:55.614474" elapsed="37.280104"/>
 </test>
-<status status="FAIL" start="2025-01-28T11:17:45.214431" elapsed="1.391789"/>
+<status status="PASS" start="2025-01-28T15:19:55.204975" elapsed="37.713148"/>
 </suite>
-<status status="FAIL" start="2025-01-28T11:17:45.173026" elapsed="1.468871"/>
+<status status="PASS" start="2025-01-28T15:19:55.201572" elapsed="37.786568"/>
 </suite>
-<status status="FAIL" start="2025-01-28T11:17:45.100333" elapsed="1.558779"/>
+<status status="PASS" start="2025-01-28T15:19:55.165506" elapsed="37.863323"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Sanber63-Mobile-Automation-Kelompok-6" id="s1" pass="0" fail="1" skip="0">Sanber63-Mobile-Automation-Kelompok-6</stat>
-<stat name="Suites" id="s1-s1" pass="0" fail="1" skip="0">Sanber63-Mobile-Automation-Kelompok-6.Suites</stat>
-<stat name="Search" id="s1-s1-s1" pass="0" fail="1" skip="0">Sanber63-Mobile-Automation-Kelompok-6.Suites.Search</stat>
+<stat name="Sanber63-Mobile-Automation-Kelompok-6" id="s1" pass="1" fail="0" skip="0">Sanber63-Mobile-Automation-Kelompok-6</stat>
+<stat name="Suites" id="s1-s1" pass="1" fail="0" skip="0">Sanber63-Mobile-Automation-Kelompok-6.Suites</stat>
+<stat name="Search1" id="s1-s1-s1" pass="1" fail="0" skip="0">Sanber63-Mobile-Automation-Kelompok-6.Suites.Search1</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-01-28T11:17:46.105742" level="ERROR">Error in file 'C:\Users\DELL\Desktop\Sanber63-Mobile-Automation-Kelompok-6\PageObjects\homePage\homePage.robot' on line 4: Library '..\..\.venv\Lib\site-packages\AppiumLibrary\__init__.py' does not exist.</msg>
-<msg time="2025-01-28T11:17:46.125898" level="WARN">Imported resource file 'C:\Users\DELL\Desktop\Sanber63-Mobile-Automation-Kelompok-6\PageObjects\searchPage\searchPage.robot' is empty.</msg>
+<msg time="2025-01-28T15:19:55.583988" level="WARN">Imported library 'C:\Users\user\Desktop\Sanber63-Mobile-Automation-Kelompok-6\.venv\Lib\site-packages\AppiumLibrary\__init__.py' contains no keywords.</msg>
 </errors>
 </robot>

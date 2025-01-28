@@ -4,7 +4,7 @@ Variables                search_Page.yaml
 Library    AppiumLibrary
 
 *** Keywords ***
-Buka Aplikasi Flight
+Buka Flight Aplikasi
     Open Application    remote_url=http://127.0.0.1:4723/wd/hub 
     ...    platformName=Android
     ...    platformVersion=7.0
@@ -16,11 +16,11 @@ Click Sign In Button
     Wait Until Element Is Visible    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/login"]
     Click Element    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/login"]
 
-Masukkan Username
+Buat Username 
     Wait Until Element Is Visible    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/username"]
     Input Text    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/username"]        text=support@ngendigital.com
 
-Masukkan Password
+Buat Password
     Wait Until Element Is Visible    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/password"]
     Input Text    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/password"]    text=abc123
 
@@ -31,7 +31,7 @@ Click Search
     Wait Until Element Is Visible      locator=//android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]
     Click Element    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]
 
-Masukkan Number Flight
+Buat Number Flight
     Wait Until Element Is Visible    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]
     Input Text    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]    text=DA935
 
