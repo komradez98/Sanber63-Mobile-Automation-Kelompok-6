@@ -16,11 +16,11 @@ Click Sign In Button
     Wait Until Element Is Visible    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/login"]
     Click Element    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/login"]
 
-Input Username
+Ketikkan Username
     Wait Until Element Is Visible    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/username"]
     Input Text    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/username"]        text=support@ngendigital.com
 
-Input Password
+Ketikkan Password
     Wait Until Element Is Visible    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/password"]
     Input Text    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/password"]    text=abc123
 
@@ -31,7 +31,7 @@ Click Search
     Wait Until Element Is Visible      locator=//android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]
     Click Element    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]
 
-Input Flight Number
+Ketikkan Flight Number
     Wait Until Element Is Visible    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]
     Input Text    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]    text=DA935
 
