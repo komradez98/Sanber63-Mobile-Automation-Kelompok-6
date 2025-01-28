@@ -7,7 +7,7 @@ Variables        check_Book_flight.yaml
 Library    AppiumLibrary
 
 *** Variables ***
-${FLIGHT_NUMMBER}    DA935
+${FLIGHT_NUMBER}    DA935
 
 *** Keywords ***
 Click Button Search

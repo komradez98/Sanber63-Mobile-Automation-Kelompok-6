@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation            Home page keywords related
 Variables                homePageLocator.yaml
+Library    ../../.venv/Lib/site-packages/AppiumLibrary/__init__.py
 
 *** Keywords ***
 Verify Home Screen Appears
@@ -9,6 +10,6 @@ Verify Home Screen Appears
 Click Login Icon
     Click Element        locator=${login_btn}
 
-Click Book Icon
+Click Search Icon
     Wait Until Element Is Visible        locator=${book_btn}
     Click Element        locator=${book_btn}

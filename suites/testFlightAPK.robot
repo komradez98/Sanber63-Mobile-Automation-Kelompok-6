@@ -6,7 +6,7 @@ Resource         ../pageObjectsAPK/checkBookFlight/checkBookFlight.robot
 Resource         ../pageObjectsAPK/chekinFlight/chekcinFlight.robot
 Resource         ../pageObjectsAPK/bookFlight/bookFlight.robot
 Test Setup       Run Keywords         
-...              Open Flight Application   
+...              Open Flight Application
 ...              AND    Verify Home Page Appears     
 Test Teardown    Close Application
 
@@ -58,7 +58,7 @@ User open the Apk and invalid login
 User Check Book Flight
     User Login
     #Step 1 : user Click Button Book
-    Click Button Search
+    Click button Signin
     #Step 2 : Verify menu Flight Book
     Verify Menu Search Flight
     #Step 3 : Input Flight Number
@@ -196,5 +196,7 @@ User Book Flight For Round Trip Method
     #Step  25 : Book Reservation has Recorded
     Book Reservation Has Recorded
 
+
+    
 
 

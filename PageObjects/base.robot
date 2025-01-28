@@ -1,14 +1,15 @@
 *** Settings ***
 Documentation            Base page keywords related
+Library                  AppiumLibrary
 
 *** Keywords ***
 Open Flight Application
-    Open Flight Application     remote_url=${REMOTE_URL}
-    ...                         platformName=${PLATFORM_NAME}
-    ...                         platformVersion=${PLATFORM_VERSION}
-    ...                         deviceName=${DEVICE_NAME}
-    ...                         appPackage=${APP_PACKAGE}
-    ...                         appActivity=${APP_ACTIVITY}
+    Open Application    remote_url=http://127.0.0.1:4723/wd/hub 
+    ...    platformName=Android
+    ...    platformVersion=7.0
+    ...    deviceName=emulator-5554
+    ...    appPackage=com.example.myapplication
+    ...    appActivity=com.example.myapplication.MainActivity
 
 Close Flight Application
     Close Flight Application

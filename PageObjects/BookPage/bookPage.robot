@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation            Login page keywords related
 Variables                bookPageLocator.yaml
+Library    AppiumLibrary
 
 *** Keywords ***
 Input Username

@@ -1,28 +1,40 @@
 *** Settings ***
-Library         AppiumLibrary
+Documentation            Search Page
+Variables                search_Page.yaml
+Library    AppiumLibrary
 
-*** Variables ***
-${APPIUM_SERVER}    http://localhost:4723/wd/hub
-${PLATFORM_NAME}    Android
-${PLATFORM_VERSION} 7.0
-${DEVICE_NAME}      emulator-5554
-${APP_PATH}         PATH_TO_YOUR.APK
+*** Keywords ***
+Buka Aplikasi Flight
+    Open Application    remote_url=http://127.0.0.1:4723/wd/hub 
+    ...    platformName=Android
+    ...    platformVersion=7.0
+    ...    deviceName=emulator-5554
+    ...    appPackage=com.example.myapplication
+    ...    appActivity=com.example.myapplication.MainActivity
 
-${SEARCH_FIELD_ID}  //android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]
-${SEARCH_BUTTON_ID} //android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]
-${RESULT_CLASS_NAME} android.widget.TextView
-${SEARCH_QUERY}     Dummy Data
-4{EXPECTED_RESULT}  Expected Dummy Result 
+Click Sign In Button
+    Wait Until Element Is Visible    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/login"]
+    Click Element    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/login"]
 
-*** Test Case ***
-Test Search Feature
-    [Documentation]     Test the search functionality of the mobile app.
-    Open Application    ${http://localhost:4723/wd/hub} platformName=${Android}
-    Wait Until Page Contains Element    id=${com.example.myapplication:id/search_flight}
-    Input Text id=${com.example.myapplication:id/search_flight}  ${SEARCH_QUERY}
-    Click Element   id=${com.example.myapplication:id/searchFlight}
-    Sleep 3s
-    ${results}=     Get Webelements     class=${RESULT_CLASS_NAME}
-    Should Be True  ${len(results)} > 0 No search result were found
-    Should Contains ${results}[0].Text  ${EXPECTED_RESULT}  Expected result not found in search results.
-    [Teardown]      Close Application
+Masukkan Username
+    Wait Until Element Is Visible    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/username"]
+    Input Text    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/username"]        text=support@ngendigital.com
+
+Masukkan Password
+    Wait Until Element Is Visible    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/password"]
+    Input Text    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/password"]    text=abc123
+
+Click Sign In Button On Login Screen
+    Click Element    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/signIn"]
+
+Click Search
+    Wait Until Element Is Visible      locator=//android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]
+    Click Element    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]
+
+Masukkan Number Flight
+    Wait Until Element Is Visible    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]
+    Input Text    locator=//android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]    text=DA935
+
+Click Search On Search Screen
+    Wait Until Element Is Visible    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]
+    Click Element    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]

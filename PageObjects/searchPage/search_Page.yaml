@@ -1,21 +1,7 @@
-# Appium Configuration for Search Feature Testing
+click_button_search: '//android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]'
+verify_Search_flight: '//android.widget.TextView[@resource-id="com.example.myapplication:id/enterFlight"]'
+Input_flight_ number: '//android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]'
+click_button_search_flight: '//android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]'
+verify_Flight_number_search_input: '//android.widget.TextView[@text="DA 935"]'
 
-appium:
-  server:
-    address: http://localhost
-    port: 4723
-  capabilities:
-    platformName: Android
-    platformVersion: 7.0
-    deviceName: emulator-5554
-    app: com.example.myapplication
-    automationName: UiAutomator2
 
-# Search Test Configuration
-tests:
-  search:
-    search_field_id: //android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]
-    search_button_id: //android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]
-    result_class_name: android.widget.TextView  # Replace with actual class name for search results
-    search_query: Dummy Data  # Query to test search functionality
-    expected_result: Expected Dummy Result  # Expected result to validate

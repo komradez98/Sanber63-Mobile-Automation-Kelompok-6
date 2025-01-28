@@ -4,6 +4,7 @@ Resource    ../PageObjects/base.robot
 Resource    ../PageObjects/HomePage/homePage.robot
 Resource    ../PageObjects/BookPage/bookPage.robot
 Resource    ../PageObjects/loginPage/loginPage.robot
+Resource    ../PageObjects/bookFlight/bookFlight.robot
 
 *** Variables ***
 ${REMOTE_URL}                                 http://localhost:4723/wd/hub                                 
@@ -20,12 +21,15 @@ ${APP_ACTIVITY}                               com.example.myapplication.MainActi
 User Can Login to Application
     Open Flight Application
     Click Butoon Login
+    Verify Book Page Open
     Input Username
-    Input Password
+    Input Password   
+    Click Sign Button
+    
     
     Click Sign Button
 User can book one way flight
-    Click Book Icon
+    Click Button Book
     Select One Way
     Select From City
     Select Class
@@ -35,7 +39,7 @@ User can book one way flight
     Select Price
     Back To Home Page
 User can book round trip flight
-    Click Book Icon
+    Click Button Book
     Select Round Trip
     Select From City
     Select End City
