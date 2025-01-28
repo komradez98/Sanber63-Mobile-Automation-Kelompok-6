@@ -17,6 +17,7 @@
 6. Tama Suci Rahmadani (Search Page)
 
 Link Record
-1.  Dede Wahyu Link: https://drive.google.com/file/d/1YVAxYaZCKPUpE7z1w3jyi3aWPsUqeTb5/view?usp=sharing
-2.  Oca Yordan Krisnanda https://drive.google.com/file/d/1So4AYeDoD1SJAcJ8e6nv1T81qTMtQ_-h/view?usp=drive_link
-3.  Tama Suci Rahmadani https://drive.google.com/file/d/1upGDNyK7lkZxTJd7XrjylaQuAL0X30Hi/view?usp=sharing
+1.  Dede Wahyu Link      :  https://drive.google.com/file/d/1YVAxYaZCKPUpE7z1w3jyi3aWPsUqeTb5/view?usp=sharing
+2.  Oca Yordan Krisnanda :  https://drive.google.com/file/d/1So4AYeDoD1SJAcJ8e6nv1T81qTMtQ_-h/view?usp=drive_link
+3.  Tama Suci Rahmadani  :  https://drive.google.com/file/d/1upGDNyK7lkZxTJd7XrjylaQuAL0X30Hi/view?usp=sharing
+4.  Fajri Annisa         :  https://drive.google.com/file/d/128l6P_WuTECdke2kiLqu0nZmmGDanM-h/view?usp=sharing
