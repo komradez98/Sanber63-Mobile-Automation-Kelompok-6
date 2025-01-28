@@ -12,7 +12,7 @@
 1. Dede Wahyu (All Moduls)
 2. Oca Yordan Krisnanda (Book Flight)      
 3. Fajri Annisa (Search Page)
-4. Naqiya Mutmainnah 
+4. Naqiya Mutmainnah (Sign Out)
 5. Reindo Aris Saputra 
 6. Tama Suci Rahmadani (Search Page)
 

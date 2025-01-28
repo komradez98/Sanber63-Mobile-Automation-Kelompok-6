@@ -5,6 +5,7 @@ Resource         ../pageObjectsAPK/loginPage/loginPage.robot
 Resource         ../pageObjectsAPK/checkBookFlight/checkBookFlight.robot
 Resource         ../pageObjectsAPK/chekinFlight/chekcinFlight.robot
 Resource         ../pageObjectsAPK/bookFlight/bookFlight.robot
+Resource         ../pageObjectsAPK/logoutPage/logoutPage.robot
 Test Setup       Run Keywords         
 ...              Open Flight Application
 ...              AND    Verify Home Page Appears     
@@ -197,6 +198,13 @@ User Book Flight For Round Trip Method
     Book Reservation Has Recorded
 
 
+<<<<<<< HEAD
     
 
 
+=======
+User Logout Button
+    User Login
+    #step 2: user click logout button
+    User try click logout
+>>>>>>> 94639a2dc14f563dc2b960f8f9b245b12206fb54
